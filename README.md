@@ -105,3 +105,4 @@ Feel free to fork this project and customize it for your own portfolio!
 ---
 
 Built with ❤️ using Next.js, TypeScript, and Tailwind CSS
+ 

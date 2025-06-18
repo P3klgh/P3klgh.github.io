@@ -74,8 +74,10 @@ export default function Home() {
             <div className="col-lg-6" data-aos="zoom-in-up">
               <div className="banner-content">
                 <div className="banner-header">
-                  <h2 className="display-1">P3klgh<br />Full Stack Developer</h2>
-                  <p className="fs-5">I specialize in creating modern web applications, mobile apps, websites, and innovative digital solutions with cutting-edge technologies.</p>
+                  <h2 className="display-1">Kenneth Lee<br />Full Stack Developer</h2>
+                  <p className="fs-5">
+                    I am a dedicated full-stack developer with a robust background in computer science and mechatronics engineering. My expertise spans programming languages like C#, C++, Python, JavaScript, and TypeScript, alongside modern technologies such as React, Node.js, PostgreSQL, and DevOps tools including Docker and AWS. Through projects like Project Gamma and a low-latency Minecraft AWS server, I've honed my ability to deliver scalable, secure solutions. My leadership in the WorldSkills Singapore robotics team, where I engineered advanced motor control and computer vision systems, reflects my passion for innovation and problem-solving. With strong teamwork and communication skills forged through national service and extracurriculars, combined with a solid academic foundation at Queensland University of Technology, I am eager to drive impact in technology-driven teams.
+                  </p>
                   <a href="#contact" className="btn btn-primary btn-large">Get in touch</a>
                 </div>
               </div>
@@ -94,22 +96,28 @@ export default function Home() {
             <div className="col-md-4 mb-5 mb-lg-0">
               <div className="info-box" data-aos="zoom-in-up" data-aos-delay="300">
                 <div className="icon"><Icon icon="la:edit" /></div>
-                <h3>Web Development</h3>
-                <p>Creating responsive, modern web applications using React, Next.js, and TypeScript with focus on performance and user experience.</p>
+                <h3>Full-Stack Development</h3>
+                <p>
+                  Building robust, scalable web applications using React, Node.js, TypeScript, and PostgreSQL, with a focus on modular architecture, security, and performance optimization.
+                </p>
               </div>
             </div>
             <div className="col-md-4 mb-5 mb-lg-0">
               <div className="info-box" data-aos="zoom-in-up" data-aos-delay="600">
                 <div className="icon"><Icon icon="la:gitter" /></div>
-                <h3>UI/UX Design</h3>
-                <p>Designing intuitive user interfaces and seamless user experiences with modern design principles and accessibility in mind.</p>
+                <h3>DevOps & Cloud</h3>
+                <p>
+                  Streamlining development workflows with Docker, AWS, and CI/CD pipelines via GitHub Actions, ensuring consistent, efficient, and reliable deployments.
+                </p>
               </div>
             </div>
             <div className="col-md-4 mb-5 mb-lg-0">
               <div className="info-box" data-aos="zoom-in-up" data-aos-delay="900">
                 <div className="icon"><Icon icon="la:jira" /></div>
-                <h3>Mobile Development</h3>
-                <p>Building cross-platform mobile applications with React Native and native technologies for iOS and Android platforms.</p>
+                <h3>Robotics & IoT</h3>
+                <p>
+                  Designing and programming embedded systems with Raspberry Pi and Arduino, integrating computer vision and sensor technologies for real-time applications.
+                </p>
               </div>
             </div>
           </div>
@@ -130,29 +138,29 @@ export default function Home() {
         <div className="container-lg">
           <div className="row">
             <div className="col-md-4">
+              <div className="card mb-4" data-aos="zoom-in-up" data-aos-delay="400">
+                <div className="card-body">
+                  <span className="card-subtitle mb-2 text-primary">2023-Present</span>
+                  <h4 className="card-title text-capitalize">Academic Excellence</h4>
+                  <p className="card-text">Maintained a GPA of 6.25 in the Bachelor of Computer Science at Queensland University of Technology, demonstrating strong performance in programming and algorithms.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
               <div className="card mb-4" data-aos="zoom-in-up" data-aos-delay="0">
                 <div className="card-body">
-                  <span className="card-subtitle mb-2 text-primary">2023</span>
-                  <h4 className="card-title text-capitalize">Best Web Developer</h4>
-                  <p className="card-text">Recognized for outstanding contributions to modern web development</p>
+                  <span className="card-subtitle mb-2 text-primary">2016</span>
+                  <h4 className="card-title text-capitalize">WorldSkills Singapore Robotics Lead</h4>
+                  <p className="card-text">Led the inaugural robotics team at ITE West to a successful debut in WorldSkills Singapore, showcasing advanced motor control and computer vision systems.</p>
                 </div>
               </div>
             </div>
             <div className="col-md-4">
               <div className="card mb-4" data-aos="zoom-in-up" data-aos-delay="200">
                 <div className="card-body">
-                  <span className="card-subtitle mb-2 text-primary">2023</span>
-                  <h4 className="card-title text-capitalize">Innovation Award</h4>
-                  <p className="card-text">Pioneering new approaches in full-stack development</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="card mb-4" data-aos="zoom-in-up" data-aos-delay="400">
-                <div className="card-body">
-                  <span className="card-subtitle mb-2 text-primary">2022</span>
-                  <h4 className="card-title text-capitalize">Top Developer</h4>
-                  <p className="card-text">Excellence in TypeScript and modern JavaScript development</p>
+                  <span className="card-subtitle mb-2 text-primary">2015-2017</span>
+                  <h4 className="card-title text-capitalize">Director's List</h4>
+                  <p className="card-text">Recognized in the top 10% of the Higher Nitec Certification cohort at the Institute of Technical Education for outstanding academic and technical performance.</p>
                 </div>
               </div>
             </div>
@@ -239,7 +247,7 @@ export default function Home() {
         <div className="container-lg">
           <div className="row">
             <div className="col-md-12 text-center">
-              <p className="m-0">&copy; 2024 P3klgh. All rights reserved.</p>
+              <p className="m-0">&copy; 2025 P3klgh. All rights reserved.</p>
             </div>
           </div>
         </div>

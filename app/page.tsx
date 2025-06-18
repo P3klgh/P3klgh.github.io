@@ -160,7 +160,7 @@ export default function Page() {
                     <div className="swiper-wrapper">
                       <div className="swiper-slide">
                         <figure className="portfolio-item">
-                          <a href="#"><img src="/images/Picture1.png" className="portfolio-image" alt="Project 1" /></a>
+                          <a href="https://github.com/P3klgh/ProjectGamma"><img src="/images/Picture1.png" className="portfolio-image" alt="Project 1" /></a>
                           <figcaption className="portfolio-title my-3">
                             <span className="text-primary text-uppercase fs-6">Personal Project</span>
                             <h3 className="fs-4 fw-bold">Project Gamma</h3>
@@ -172,7 +172,7 @@ export default function Page() {
                       </div>
                       <div className="swiper-slide">
                         <figure className="portfolio-item">
-                          <a href="#"><img src="/images/Picture2.png" className="portfolio-image" alt="Project 2" /></a>
+                          <a href="https://drive.google.com/file/d/1YLerWn2xKWmHct70oK_98CqARqWV7qMs/view?usp=sharing"><img src="/images/Picture2.png" className="portfolio-image" alt="Project 2" /></a>
                           <figcaption className="portfolio-title my-3">
                             <span className="text-primary text-uppercase fs-6">Project in a University unit</span>
                             <h3 className="fs-4 fw-bold">Security Camera App</h3>
@@ -184,7 +184,7 @@ export default function Page() {
                         </div>
                         <div className="swiper-slide">
                           <figure className="portfolio-item">
-                            <a href="#"><img src="/images/Picture3.png" className="portfolio-image" alt="WorldSkills Robotics" /></a>
+                            <a href="https://docs.google.com/document/d/14eIYmkjpOa0BCv5CplPUg-S_bTrYx3Gq/edit?usp=sharing&ouid=105796539456882712330&rtpof=true&sd=true"><img src="/images/Picture3.png" className="portfolio-image" alt="WorldSkills Robotics" /></a>
                             <figcaption className="portfolio-title my-3">
                               <span className="text-primary text-uppercase fs-6">Robotics Competition</span>
                               <h3 className="fs-4 fw-bold">WorldSkills Singapore Robotics</h3>

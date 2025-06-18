@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# P3klgh Portfolio
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Modern Tech Stack**: Next.js 15 with TypeScript and Tailwind CSS
+- **Responsive Design**: Mobile-first approach with beautiful gradients and animations
+- **Static Export**: Optimized for GitHub Pages deployment
+- **Fast Performance**: Built with Next.js for optimal loading speeds
+- **SEO Ready**: Meta tags and semantic HTML structure
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Deployment**: GitHub Pages
+- **CI/CD**: GitHub Actions
+
+## 📁 Project Structure
+
+```
+├── app/                    # Next.js app directory
+│   ├── globals.css        # Global styles with Tailwind
+│   ├── layout.tsx         # Root layout component
+│   └── page.tsx           # Homepage portfolio content
+├── public/                # Static assets
+├── .github/workflows/     # GitHub Actions for deployment
+└── next.config.ts         # Next.js configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js 18+ 
+- npm or yarn
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository:
+```bash
+git clone https://github.com/P3klgh/P3klgh.github.io.git
+cd P3klgh.github.io
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Run the development server:
+```bash
+npm run dev
+```
 
-## Deploy on Vercel
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Building for Production
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+```
+
+The static site will be generated in the `out/` directory.
+
+## 🎨 Customization
+
+### Updating Content
+
+- **Hero Section**: Edit the title and description in `app/page.tsx`
+- **About Section**: Modify the about text in the About section
+- **Skills**: Update the skills array in the Skills section
+- **Projects**: Replace the project cards with your own projects
+- **Contact**: Update email and social links
+
+### Styling
+
+- **Colors**: Modify Tailwind classes or extend the theme in `tailwind.config.js`
+- **Layout**: Adjust spacing and layout using Tailwind utility classes
+- **Components**: Create new components in the `app/` directory
+
+## 🌐 Deployment
+
+This portfolio is automatically deployed to GitHub Pages via GitHub Actions. Every push to the `main` branch triggers a new deployment.
+
+### Manual Deployment
+
+1. Build the project:
+```bash
+npm run build
+```
+
+2. The static files will be in the `out/` directory, ready for deployment.
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Feel free to fork this project and customize it for your own portfolio!
+
+---
+
+Built with ❤️ using Next.js, TypeScript, and Tailwind CSS

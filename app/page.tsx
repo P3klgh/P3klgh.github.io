@@ -14,14 +14,6 @@ export default function Home() {
       });
     }
 
-    // Page loader
-    const overlayer = document.getElementById('overlayer');
-    if (overlayer) {
-      setTimeout(() => {
-        overlayer.style.display = 'none';
-      }, 1000);
-    }
-
     // Mobile menu functionality
     const menuToggle = document.getElementById('menu-toggle') as HTMLInputElement;
     const navOverlay = document.querySelector('.nav-overlay') as HTMLElement;
@@ -48,13 +40,6 @@ export default function Home() {
 
   return (
     <>
-      {/* Loader */}
-      <div id="overlayer">
-        <span className="loader">
-          <span className="loader-inner"></span>
-        </span>
-      </div>
-
       {/* Navigation Overlay */}
       <div className="nav nav-overlay">
         <div className="nav__content">

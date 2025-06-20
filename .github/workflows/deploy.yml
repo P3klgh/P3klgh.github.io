@@ -5,10 +5,7 @@ on:
     branches: [ main ]
 
 # Add permissions for GitHub Actions to deploy to GitHub Pages
-permissions:
-  contents: write
-  pages: write
-  id-token: write
+permissions: write-all
 
 jobs:
   deploy:

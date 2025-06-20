@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/P3klgh-page' : '',
+  basePath: '',
 };
 
 export default nextConfig;

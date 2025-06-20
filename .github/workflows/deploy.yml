@@ -4,6 +4,12 @@ on:
   push:
     branches: [ main ]
 
+# Add permissions for GitHub Actions to deploy to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -25,6 +31,10 @@ jobs:
         env:
           NODE_ENV: production
       
+      # Add a CNAME file to the build output
+      - name: Create CNAME
+        run: echo "p3kl.gh" > dist/CNAME
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:

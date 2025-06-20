@@ -26,6 +26,47 @@ body {
   color: #333;
 }
 
+/* Dark theme overrides */
+.dark body {
+  color: #e5e5e5;
+  background-color: #1a1a1a;
+}
+
+.dark .info-box {
+  background: #2d2d2d;
+  color: #e5e5e5;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dark .card {
+  background: #2d2d2d;
+  color: #e5e5e5;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dark .bg-grey {
+  background: #2d2d2d;
+}
+
+.dark .swiper-slide {
+  background: #2d2d2d;
+  color: #e5e5e5;
+}
+
+.dark .text-dark {
+  color: #e5e5e5 !important;
+}
+
+.dark .btn-outline-dark {
+  color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+.dark .btn-outline-dark:hover {
+  background-color: #e5e5e5;
+  color: #1a1a1a;
+}
+
 /* Loader */
 #overlayer {
   position: fixed;
@@ -305,8 +346,6 @@ body {
   object-fit: cover;
 }
 
-
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -378,8 +417,6 @@ body {
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
-
-
 
 @layer base {
   * {

@@ -2,6 +2,7 @@
 
 import { Icon } from '@iconify/react';
 import { AppSidebar } from "@/components/app-sidebar"
+import ShinyText from "@/components/ui/shiny-text";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -23,13 +24,27 @@ export default function Page() {
     <SidebarProvider>
       <AppSidebar />
       <SidebarInset>
-        <header className="flex h-16 shrink-0 items-center gap-2 border-b px-4">
+        <header className="flex h-16 shrink-0 items-center gap-2 border-b bg-gray-800 text-white px-4">
           <SidebarTrigger className="-ml-1" />
+          <ShinyText text="Kenneth Lee" />
           <Separator 
           orientation="vertical" 
           className="mr-2 data-[orientation=vertical]:h-4" 
           />
-
+          <div className="ml-auto flex items-center gap-2">
+            <a href="mailto:kenneth.gh.lee@gmail.com" className="btn btn-outline-light btn-icon" aria-label="Email">
+              <Icon icon="mdi:email" width="20" height="20" />
+            </a>
+            <a href="https://github.com/P3klgh" className="btn btn-outline-light btn-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <Icon icon="mdi:github" width="20" height="20" />
+            </a>
+            <a href="#" className="btn btn-outline-light btn-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <Icon icon="mdi:linkedin" width="20" height="20" />
+            </a>
+            <a href="#" className="btn btn-outline-light btn-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <Icon icon="mdi:instagram" width="20" height="20" />
+            </a>
+          </div>
         </header>
         <div className="flex flex-1 flex-col gap-4 p-4">
           {/* Main Portfolio Content */}
@@ -40,9 +55,9 @@ export default function Page() {
                 <div className="col-lg-6" data-aos="zoom-in-up">
                   <div className="banner-content">
                     <div className="banner-header">
-                      <h2 className="display-1">Kenneth Lee<br />Full Stack Developer</h2>
+                      <h2 className="display-1">Aspiring Full Stack Developer</h2>
                       <p className="fs-5">
-                        I am a dedicated full-stack developer with a robust background in computer science and mechatronics engineering. My expertise spans programming languages like C#, C++, Python, JavaScript, and TypeScript, alongside modern technologies such as React, Node.js, PostgreSQL, and DevOps tools including Docker and AWS. Through projects like Project Gamma and a low-latency Minecraft AWS server, I've honed my ability to deliver scalable, secure solutions. My leadership in the WorldSkills Singapore robotics team, where I engineered advanced motor control and computer vision systems, reflects my passion for innovation and problem-solving. With strong teamwork and communication skills forged through national service and extracurriculars, combined with a solid academic foundation at Queensland University of Technology, I am eager to drive impact in technology-driven teams.
+                        As a recent Computer Science graduate from Queensland University of Technology, with a strong foundation in mechatronics engineering, I am actively developing my skills as a full-stack developer. I am proficient in programming languages such as C#, C++, Python, JavaScript, and TypeScript, and adept with technologies like React, Node.js, PostgreSQL, and DevOps tools, including Docker, and AWS. My ability to create secure, scalable solutions is demonstrated through projects like Project Gamma and a high-performance Minecraft AWS server. Leading the WorldSkills Singapore robotics team, where I designed sophisticated motor control and computer vision systems, underscores my commitment to innovation and problem-solving. Bolstered by excellent teamwork and communication skills, honed through national service and extracurricular activities, and a rigorous academic background, I am enthusiastic about contributing to dynamic, technology-focused teams.
                       </p>
                       <a href="#contact" className="btn btn-primary btn-large">Get in touch</a>
                     </div>
@@ -165,7 +180,7 @@ export default function Page() {
                             <span className="text-primary text-uppercase fs-6">Personal Project</span>
                             <h3 className="fs-4 fw-bold">Project Gamma</h3>
                             <p className="fs-6">Working with React 18 and TypeScript, I embarked on a journey to architect scalable frontends that truly resonated with my growing expertise. I made it a point to craft reusable components, which not only streamlined my development process but also deepened my appreciation for modularity. 
-                              Embracing TypeScript’s strong typing became a personal milestone, as it allowed me to prevent runtime errors and instil a sense of consistency across the user interface—a challenge I initially underestimated. One of the most rewarding discoveries was the power of the Context API, which I implemented to manage authentication state globally. This experience taught me how to elegantly wrap protected views, giving me a profound sense of accomplishment as I ensured the UI seamlessly adapted to shifts in authentication state. Reflecting on this, I recognize how these practices have shaped my approach, blending technical skill with a thoughtful understanding of user experience and security.
+                              Embracing TypeScript's strong typing became a personal milestone, as it allowed me to prevent runtime errors and instil a sense of consistency across the user interface—a challenge I initially underestimated. One of the most rewarding discoveries was the power of the Context API, which I implemented to manage authentication state globally. This experience taught me how to elegantly wrap protected views, giving me a profound sense of accomplishment as I ensured the UI seamlessly adapted to shifts in authentication state. Reflecting on this, I recognize how these practices have shaped my approach, blending technical skill with a thoughtful understanding of user experience and security.
                             </p>
                           </figcaption>
                         </figure>
@@ -189,7 +204,7 @@ export default function Page() {
                               <span className="text-primary text-uppercase fs-6">Robotics Competition</span>
                               <h3 className="fs-4 fw-bold">WorldSkills Singapore Robotics</h3>
                               <p className="fs-6">
-                                As team lead for ITE West’s inaugural robotics team at WorldSkills Singapore 2016, I spearheaded the design and programming of a competitive mobile robotics system. Using NI MyRio controllers, LabVIEW, and C++, I developed advanced motor control systems with precise PID tuning for mecanum wheels and integrated computer vision using NI Vision for real-time object detection. I engineered a custom LabVIEW interface for live PID monitoring and implemented IR GP2Y sensors for wall detection, enhancing navigation. This project, executed over two years using a hybrid Waterfall-Agile methodology, showcased my expertise in hardware-software integration and leadership in a high-stakes competition.
+                                As team lead for ITE West's inaugural robotics team at WorldSkills Singapore 2016, I spearheaded the design and programming of a competitive mobile robotics system. Using NI MyRio controllers, LabVIEW, and C++, I developed advanced motor control systems with precise PID tuning for mecanum wheels and integrated computer vision using NI Vision for real-time object detection. I engineered a custom LabVIEW interface for live PID monitoring and implemented IR GP2Y sensors for wall detection, enhancing navigation. This project, executed over two years using a hybrid Waterfall-Agile methodology, showcased my expertise in hardware-software integration and leadership in a high-stakes competition.
                               </p>
                             </figcaption>
                           </figure>
@@ -217,8 +232,18 @@ export default function Page() {
                   <div className="contact-info text-center">
                     <p className="mb-4">I'm always interested in new opportunities and exciting projects. Let's discuss how we can work together!</p>
                     <div className="d-flex justify-content-center gap-4">
-                      <a href="mailto:kenneth.gh.lee@gmail.com" className="btn btn-primary">Email Me</a>
-                      <a href="https://github.com/P3klgh" className="btn btn-outline-dark" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="mailto:kenneth.gh.lee@gmail.com" className="btn btn-outline-dark btn-icon" aria-label="Email">
+                      <Icon icon="mdi:email" width="20" height="20" />
+                    </a>
+                    <a href="https://github.com/P3klgh" className="btn btn-outline-dark btn-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                      <Icon icon="mdi:github" width="20" height="20" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/kenneth-l-461123175/" className="btn btn-outline-dark btn-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                      <Icon icon="mdi:linkedin" width="20" height="20" />
+                    </a>
+                    <a href="https://www.instagram.com/chickn_soup/" className="btn btn-outline-dark btn-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                      <Icon icon="mdi:instagram" width="20" height="20" />
+                    </a>
                     </div>
                   </div>
                 </div>

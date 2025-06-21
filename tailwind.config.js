@@ -1,3 +1,5 @@
+const { fontFamily } = require("tailwindcss/defaultTheme")
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     darkMode: ["class"],
@@ -5,9 +7,17 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
-    "./public/**/*.{js,ts,jsx,tsx,html}"
+    "./public/**/*.{js,ts,jsx,tsx,html}",
+    './src/**/*.{ts,tsx}',
   ],
   theme: {
+  	container: {
+  		center: true,
+  		padding: "2rem",
+  		screens: {
+  			"2xl": "1400px",
+  		},
+  	},
   	extend: {
   		borderRadius: {
   			lg: 'var(--radius)',
@@ -65,7 +75,19 @@ module.exports = {
   				border: 'hsl(var(--sidebar-border))',
   				ring: 'hsl(var(--sidebar-ring))'
   			}
-  		}
+  		},
+  		keyframes: {
+  			"background-shine": {
+  				"from": { "background-position": "200% center" },
+  				"to": { "background-position": "-200% center" }
+  			},
+  		},
+  		animation: {
+  			"background-shine": "background-shine 2s linear infinite",
+  		},
+  		fontFamily: {
+  			sans: ["var(--font-sans)", ...fontFamily.sans],
+  		},
   	}
   },
   plugins: [require("tailwindcss-animate")],

@@ -38,10 +38,10 @@ export default function Page() {
             <a href="https://github.com/P3klgh" className="btn btn-outline-light btn-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <Icon icon="mdi:github" width="20" height="20" />
             </a>
-            <a href="#" className="btn btn-outline-light btn-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/KennethLeeGH" className="btn btn-outline-light btn-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <Icon icon="mdi:linkedin" width="20" height="20" />
             </a>
-            <a href="#" className="btn btn-outline-light btn-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/chickn_soup/" className="btn btn-outline-light btn-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <Icon icon="mdi:instagram" width="20" height="20" />
             </a>
           </div>
@@ -238,7 +238,7 @@ export default function Page() {
                     <a href="https://github.com/P3klgh" className="btn btn-outline-dark btn-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                       <Icon icon="mdi:github" width="20" height="20" />
                     </a>
-                    <a href="https://www.linkedin.com/in/kenneth-l-461123175/" className="btn btn-outline-dark btn-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/KennethLeeGH" className="btn btn-outline-dark btn-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                       <Icon icon="mdi:linkedin" width="20" height="20" />
                     </a>
                     <a href="https://www.instagram.com/chickn_soup/" className="btn btn-outline-dark btn-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram">

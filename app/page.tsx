@@ -17,8 +17,18 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
+import { useAnalytics } from "@/hooks/use-analytics"
 
 export default function Page() {
+  const { trackButton, trackLink } = useAnalytics();
+
+  const handleExternalLink = (url: string, linkText: string) => {
+    trackLink(url, linkText);
+  };
+
+  const handleButtonClick = (buttonName: string, location?: string) => {
+    trackButton(buttonName, location);
+  };
 
   return (
     <SidebarProvider>
@@ -32,16 +42,42 @@ export default function Page() {
           className="mr-2 data-[orientation=vertical]:h-4" 
           />
           <div className="ml-auto flex items-center gap-2">
-            <a href="mailto:kenneth.gh.lee@gmail.com" className="btn btn-outline-light btn-icon" aria-label="Email">
+            <a 
+              href="mailto:kenneth.gh.lee@gmail.com" 
+              className="btn btn-outline-light btn-icon" 
+              aria-label="Email"
+              onClick={() => handleButtonClick('email', 'header')}
+            >
               <Icon icon="mdi:email" width="20" height="20" />
             </a>
-            <a href="https://github.com/P3klgh" className="btn btn-outline-light btn-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <a 
+              href="https://github.com/P3klgh" 
+              className="btn btn-outline-light btn-icon" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label="GitHub"
+              onClick={() => handleExternalLink('https://github.com/P3klgh', 'GitHub')}
+            >
               <Icon icon="mdi:github" width="20" height="20" />
             </a>
-            <a href="https://www.linkedin.com/in/KennethLeeGH" className="btn btn-outline-light btn-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a 
+              href="https://www.linkedin.com/in/KennethLeeGH" 
+              className="btn btn-outline-light btn-icon" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label="LinkedIn"
+              onClick={() => handleExternalLink('https://www.linkedin.com/in/KennethLeeGH', 'LinkedIn')}
+            >
               <Icon icon="mdi:linkedin" width="20" height="20" />
             </a>
-            <a href="https://www.instagram.com/chickn_soup/" className="btn btn-outline-light btn-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a 
+              href="#" 
+              className="btn btn-outline-light btn-icon" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              aria-label="Instagram"
+              onClick={() => handleButtonClick('instagram', 'header')}
+            >
               <Icon icon="mdi:instagram" width="20" height="20" />
             </a>
           </div>

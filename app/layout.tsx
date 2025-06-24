@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
-import { GoogleAnalytics } from '@next/third-parties/google'
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +14,8 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children,}: {children: React.ReactNode;}) {
+  const gaId = process.env.NEXT_PUBLIC_GA_ID;
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -29,6 +31,23 @@ export default function RootLayout({ children,}: {children: React.ReactNode;}) {
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
           crossOrigin="anonymous"
         />
+        {/* Google tag (gtag.js) */}
+        {gaId && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${gaId}');
+              `}
+            </Script>
+          </>
+        )}
       </head>
       <body className={inter.className}>
         <ThemeProvider
@@ -46,7 +65,6 @@ export default function RootLayout({ children,}: {children: React.ReactNode;}) {
           crossOrigin="anonymous"
         ></script>
         <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || "G-XXXXXXXXXX"} />
       </body>
     </html>
   );
